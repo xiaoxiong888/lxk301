@@ -1,4 +1,4 @@
-# File: .github/workflows/repo-sync.yml
+﻿# File: .github/workflows/repo-sync.yml
 name: sync-lxk0301-scripts
 on:
   schedule:
@@ -25,7 +25,7 @@ jobs:
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/lxk0301/scripts.git"
+          source_repo: "https://github.com/yhgjzx/lxk301.git"
           source_branch: "master"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
